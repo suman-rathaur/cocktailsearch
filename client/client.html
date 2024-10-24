@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cocktail Search Engine</title>
+    <link rel="stylesheet" href="client.css"> <!-- Link to external CSS -->
+
+    <!-- Add jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="client.js" defer></script>
+</head>
+<body>
+    <!-- Header section -->
+    <header>
+        <h1>Cin Cin</h1>
+    </header>
+
+    <div class="background">
+        <div class="search-container">
+            <h2>Discover your perfect pour.. 🍹✨</h2>
+            <div class="search-box">
+                <input type="text" id="uicocktail" name="uicocktail" placeholder="Search for a cocktail..." aria-label="Search for a cocktail">
+                <button class="search" onclick="onClickedSearch()" type="button">Search</button>
+            </div>
+        </div>
+        <!-- Result container -->
+        <div id="uiEstimatedBars" class="result"></div>
+    </div>
+
+    <footer>
+        <p>© 2024 Cocktail Search Engine</p>
+    </footer>
+</body>
+</html>
